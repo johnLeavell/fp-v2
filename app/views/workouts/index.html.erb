@@ -16,12 +16,57 @@
 
     <form action="/insert_workout" method="post">
       <div>
-        <label for="description_box">
-          Description
+        <label for="exercise_id_box">
+          Exercise 1
         </label>
 
-        <input type="text" id="description_box" name="query_description">
+        <input type="text" id="exercise_id_box" name="query_exercise_id">
       </div>
+      <div>
+        <label for="exercise_id_box">
+          Exercise 2
+        </label>
+
+        <input type="text" id="exercise_id_box" name="query_exercise_id">
+      </div><div>
+        <label for="exercise_id_box">
+          Exercise 3
+        </label>
+
+        <input type="text" id="exercise_id_box" name="query_exercise_id">
+      </div><div>
+        <label for="exercise_id_box">
+          Exercise 4
+        </label>
+
+        <input type="text" id="exercise_id_box" name="query_exercise_id">
+      </div><div>
+        <label for="exercise_id_box">
+          Exercise 5
+        </label>
+
+        <input type="text" id="exercise_id_box" name="query_exercise_id">
+      </div><div>
+        <label for="exercise_id_box">
+          Exercise 6
+        </label>
+
+        <input type="text" id="exercise_id_box" name="query_exercise_id">
+      </div><div>
+        <label for="exercise_id_box">
+          Exercise 7
+        </label>
+
+        <input type="text" id="exercise_id_box" name="query_exercise_id">
+      </div>
+<%# 
+      <div>
+        <label for="coaches_comments_box">
+          Coaches comments
+        </label>
+
+        <input type="text" id="coaches_comments_box" name="query_coaches_comments">
+      </div> %>
 
       <button>
         Create workout
@@ -40,7 +85,11 @@
         </th>
 
         <th>
-          Description
+          Exercise
+        </th>
+
+        <th>
+          Coaches comments
         </th>
 
         <th>
@@ -62,7 +111,11 @@
         </td>
 
         <td>
-          <%= a_workout.description %>
+          <%= a_workout.exercise_id %>
+        </td>
+
+        <td>
+          <%= a_workout.coaches_comments %>
         </td>
 
         <td>

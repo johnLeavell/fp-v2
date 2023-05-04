@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
 
   # Routes for the Exercise resource:
+  get("/", { controller: "welcome", action: "index" })
 
   # CREATE
   post("/insert_exercise", { :controller => "exercises", :action => "create" })
