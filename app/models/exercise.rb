@@ -10,4 +10,7 @@
 #  workout_id :string
 #
 class Exercise < ApplicationRecord
+  validates :content, presence: true
+  validates :role, presence: true
+  
 end

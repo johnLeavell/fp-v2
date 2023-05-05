@@ -31,11 +31,11 @@
 <body>
   <%= render "shared/navbar" %>
 
-  <div class="container">
+  <div style="max-width: 800px margin: auto" class="container">
     <%= render "shared/flashes" %>
 
     <%= yield %>
   </div>
-
+  <%= render "shared/footer" %>
 </body>
 </html>
